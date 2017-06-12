@@ -1,0 +1,15 @@
+<h1>this is a blog</h1>
+
+<%= link_to "about page", about_main_index_path %>
+
+<p><%= link_to "add a new entry", new_entry_path %>
+
+
+<% @entries.each do |entry| %>
+  <h3><%= entry.title %></h3>
+  posted<strong> <%= entry.created_at.localtime.stamp("July 1, 2000 at 4:00pm") %></strong>
+
+  <p><%= entry.content %></p>
+
+
+<% end %>
