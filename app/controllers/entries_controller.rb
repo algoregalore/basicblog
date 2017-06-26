@@ -18,6 +18,12 @@ class EntriesController < ApplicationController
     end
   end
 
+  def show
+  end
+
+  def edit
+  end
+
   private
   def entry_params
     params.require(:entry).permit(:title, :content)

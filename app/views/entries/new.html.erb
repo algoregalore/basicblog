@@ -2,13 +2,13 @@
 
 <%= form_for @entry do |entries_fields| %>
   <%= entries_fields.label :title %>
-  <%= entries_fields.text_field :title %>
+  <br><%= entries_fields.text_field :title %>
 
   <p>
 
   <%= entries_fields.label :content %>
-  <%= entries_fields.text_field :content %>
+  <br><%= entries_fields.text_area :content, size: "50x20" %>
 
-  <%= entries_fields.submit %>
+  <p><%= entries_fields.submit %>
 
 <% end %>
